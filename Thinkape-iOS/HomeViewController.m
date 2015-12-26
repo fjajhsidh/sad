@@ -32,6 +32,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoginVC) name:@"logout" object:nil];
+        NSLog(@"DA");
     }
     return self;
 }
