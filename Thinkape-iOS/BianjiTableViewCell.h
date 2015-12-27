@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface BianjiTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *leftlabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *lefttable;
+@property (weak, nonatomic) IBOutlet UILabel *leftlabel;
+@property (weak, nonatomic) IBOutlet UIButton *rightButton;
 
 @end

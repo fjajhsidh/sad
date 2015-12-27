@@ -183,25 +183,8 @@
 -(void)button{
     NSLog(@"ascasc");
 }
-- (void)addDatePickerView:(NSInteger)tag date:(NSString *)date{
-//    if (!self.datePickerView) {
-//        self.datePickerView = [[[NSBundle mainBundle] loadNibNamed:@"DatePickerView" owner:self options:nil] lastObject];
-//        [self.datePickerView setFrame:CGRectMake(0, self.view.frame.size.height - 218, self.view.frame.size.width, 218)];
-//    }
-//    __block BianJiViewController *weakSelf = self;
-//    self.datePickerView.tag = tag;
-//    
-//    if (date.length != 0) {
-//        self.datePickerView.date = date;
-//    }
-//    ∫∫
-//    self.datePickerView.selectDateCallBack = ^(NSString *date){
-    
- 
-}
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    }
+
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 
 {
@@ -224,22 +207,28 @@
         cell.leftlabel.text = [NSString stringWithFormat:@"%@:",model.name];
         //        cell.rightbutton text = [mainDataDic objectForKey:model.fieldname];
         //        [cell.rightbutton setTitle:[mainDataDic objectForKey:model.fieldname] forState:UIControlStateNormal];
-        cell.lefttable.text=[mainDataDic objectForKey:model.fieldname];
+        [cell.rightButton setTitle:[NSString stringWithFormat:@"%@",[mainDataDic objectForKey:model.fieldname]] forState:UIControlStateNormal];
+        [cell.rightButton setTitleColor:[UIColor blackColor]];
+        
         
         //        cell.contentLabelHeight.constant = [self fixStr:[mainDataDic objectForKey:model.fieldname]];
         if ([model.fieldname isEqualToString:@"totalmoney"]) {
             //            cell.leftlabel.textColor = [UIColor hex:@"f23f4e"];
-            cell.lefttable.textColor=[UIColor hex:@"f23f4e"];
+            cell.leftlabel.textColor=[UIColor hex:@"f23f4e"];
+        }
+        if ([model.fieldname isEqualToString:@"billdate_show"]) {
+            [cell.rightButton addTarget:self action:@selector(datajiru) forControlEvents:UIControlStateNormal];
+            
         }
         else
-            cell.lefttable.textColor = [UIColor hex:@"333333"];
+            cell.leftlabel.textColor = [UIColor hex:@"333333"];
         
     }
     if (indexPath.row == _mainLayoutArray.count) {
         
         cell.leftlabel.text =nil;
-        cell.lefttable.text = nil;
         
+         [cell.rightButton setTitle:@"" forState:UIControlStateNormal];
         [cell.contentView addSubview:[self costScrollView]];
         
     }
@@ -258,7 +247,7 @@
     else if (indexPath.row == _mainLayoutArray.count + 1){
         cell.leftlabel.text =nil;
         
-        cell.lefttable.text =nil;
+        [cell.rightButton setTitle:@"" forState:UIControlStateNormal];
         if (!bgView) {
             bgView = [[UIView alloc] initWithFrame:CGRectMake(18, 0, SCREEN_WIDTH - 36, (SCREEN_WIDTH - 36) * 0.75)];
             bgView.tag = 204;
@@ -273,10 +262,16 @@
         [self addItems:bgView];
         [cell.contentView addSubview:bgView];
     }
+    cell.selectionStyle=UITableViewCellSelectionStyleNone;
     
     return cell;
     
 }
+-(void)datajiru
+{
+    
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     CGFloat rowHeight = 0.0f;
