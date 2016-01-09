@@ -11,6 +11,7 @@
 @interface BianjiTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *leftlabel;
-@property (weak, nonatomic) IBOutlet UIButton *rightButton;
+@property (weak, nonatomic) IBOutlet UITextField *textfield;
+
 
 @end

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -19,7 +19,6 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0b-L9-pUy">
                                     <rect key="frame" x="315" y="0.0" width="45" height="35"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="Fu0-bu-RVW"/>
                                         <constraint firstAttribute="width" constant="45" id="OBm-kj-OtH"/>
@@ -29,12 +28,11 @@
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <action selector="doSelect:" destination="2eY-0g-2gD" eventType="touchUpInside" id="U56-cB-NEA"/>
+                                        <action selector="define:" destination="2eY-0g-2gD" eventType="touchUpInside" id="XKW-YG-Hej"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cU1-dm-wW1">
                                     <rect key="frame" x="15" y="0.0" width="45" height="35"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="45" id="t3h-TX-wnR"/>
                                         <constraint firstAttribute="height" constant="35" id="ycC-ZJ-Qbb"/>
@@ -48,7 +46,6 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" red="0.23529411759999999" green="0.50196078430000002" blue="0.84705882349999995" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="tintColor" red="0.30196078430000001" green="0.53333333329999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -60,7 +57,6 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="kTs-9I-ZXa" secondAttribute="trailing" id="PGF-kM-dGS"/>
@@ -69,7 +65,6 @@
                     </constraints>
                 </view>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="vbb-T6-Q3O" firstAttribute="leading" secondItem="2eY-0g-2gD" secondAttribute="leading" id="Dy0-Gm-uIH"/>

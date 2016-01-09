@@ -13,5 +13,6 @@
 @property (nonatomic,strong) NSString *fieldname;
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSString *ishide;
+@property(nonatomic,strong) NSString *ismust;
 
 @end

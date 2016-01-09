@@ -550,6 +550,7 @@
     if (self.type == 0) {
         commintBills = YES;
         [self saveBills:@"SaveCG"];
+         [self saveCGToBill];
     }
     else
     {

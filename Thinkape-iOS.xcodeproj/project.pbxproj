@@ -9,8 +9,19 @@
 /* Begin PBXBuildFile section */
 		1F4F63651C2A8BE400EB1CD1 /* BianJiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F63631C2A8BE400EB1CD1 /* BianJiViewController.m */; };
 		1F4F63661C2A8BE400EB1CD1 /* BianJiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4F63641C2A8BE400EB1CD1 /* BianJiViewController.xib */; };
+		1F54CB031C3648C7009A642C /* Bianjiviewtableview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54CB011C3648C7009A642C /* Bianjiviewtableview.m */; };
+		1F54CB041C3648C7009A642C /* Bianjiviewtableview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F54CB021C3648C7009A642C /* Bianjiviewtableview.xib */; };
+		1F54CB081C364C6C009A642C /* BijicellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54CB061C364C6C009A642C /* BijicellTableViewCell.m */; };
+		1F54CB091C364C6C009A642C /* BijicellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F54CB071C364C6C009A642C /* BijicellTableViewCell.xib */; };
+		1F5C196F1C338D5F00226BBD /* BianjiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C196E1C338D5F00226BBD /* BianjiTableViewCell.xib */; };
+		1F5C19731C33D3B500226BBD /* jiaban_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C19721C33D3B500226BBD /* jiaban_white.png */; };
+		1F6D8CFD1C3B57B700496AF1 /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D8CFB1C3B57B700496AF1 /* MixiViewController.m */; };
+		1F6D8CFE1C3B57B700496AF1 /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6D8CFC1C3B57B700496AF1 /* MixiViewController.xib */; };
+		1F6D8D001C3B6FD200496AF1 /* no_image.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6D8CFF1C3B6FD200496AF1 /* no_image.9.png */; };
+		1F6D8D021C3B707D00496AF1 /* ab_nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6D8D011C3B707D00496AF1 /* ab_nav_bg.png */; };
 		1F78343D1C2923D300DDD1B5 /* BianjiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F78343B1C2923D300DDD1B5 /* BianjiTableViewCell.m */; };
-		1F78343E1C2923D300DDD1B5 /* BianjiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F78343C1C2923D300DDD1B5 /* BianjiTableViewCell.xib */; };
+		1FB11E331C32AD69009D1F5F /* Bianjito.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB11E311C32AD69009D1F5F /* Bianjito.m */; };
+		1FB11E341C32AD69009D1F5F /* Bianjito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB11E321C32AD69009D1F5F /* Bianjito.xib */; };
 		4E0076721AEA05D00092CAB7 /* ParentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0076711AEA05D00092CAB7 /* ParentsViewController.m */; };
 		4E00767C1AEA07600092CAB7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00767B1AEA07600092CAB7 /* HomeViewController.m */; };
 		4E0076801AEA07ED0092CAB7 /* CompanyNoticeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00767F1AEA07ED0092CAB7 /* CompanyNoticeListViewController.m */; };
@@ -114,9 +125,24 @@
 		1F4F63621C2A8BE400EB1CD1 /* BianJiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BianJiViewController.h; sourceTree = "<group>"; };
 		1F4F63631C2A8BE400EB1CD1 /* BianJiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianJiViewController.m; sourceTree = "<group>"; };
 		1F4F63641C2A8BE400EB1CD1 /* BianJiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BianJiViewController.xib; sourceTree = "<group>"; };
+		1F54CB001C3648C7009A642C /* Bianjiviewtableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bianjiviewtableview.h; sourceTree = "<group>"; };
+		1F54CB011C3648C7009A642C /* Bianjiviewtableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bianjiviewtableview.m; sourceTree = "<group>"; };
+		1F54CB021C3648C7009A642C /* Bianjiviewtableview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Bianjiviewtableview.xib; sourceTree = "<group>"; };
+		1F54CB051C364C6C009A642C /* BijicellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BijicellTableViewCell.h; sourceTree = "<group>"; };
+		1F54CB061C364C6C009A642C /* BijicellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BijicellTableViewCell.m; sourceTree = "<group>"; };
+		1F54CB071C364C6C009A642C /* BijicellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BijicellTableViewCell.xib; sourceTree = "<group>"; };
+		1F5C196E1C338D5F00226BBD /* BianjiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BianjiTableViewCell.xib; sourceTree = "<group>"; };
+		1F5C19721C33D3B500226BBD /* jiaban_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiaban_white.png; sourceTree = "<group>"; };
+		1F6D8CFA1C3B57B700496AF1 /* MixiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
+		1F6D8CFB1C3B57B700496AF1 /* MixiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
+		1F6D8CFC1C3B57B700496AF1 /* MixiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiViewController.xib; sourceTree = "<group>"; };
+		1F6D8CFF1C3B6FD200496AF1 /* no_image.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_image.9.png; sourceTree = "<group>"; };
+		1F6D8D011C3B707D00496AF1 /* ab_nav_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ab_nav_bg.png; sourceTree = "<group>"; };
 		1F78343A1C2923D300DDD1B5 /* BianjiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BianjiTableViewCell.h; sourceTree = "<group>"; };
 		1F78343B1C2923D300DDD1B5 /* BianjiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianjiTableViewCell.m; sourceTree = "<group>"; };
-		1F78343C1C2923D300DDD1B5 /* BianjiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BianjiTableViewCell.xib; sourceTree = "<group>"; };
+		1FB11E301C32AD69009D1F5F /* Bianjito.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bianjito.h; sourceTree = "<group>"; };
+		1FB11E311C32AD69009D1F5F /* Bianjito.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bianjito.m; sourceTree = "<group>"; };
+		1FB11E321C32AD69009D1F5F /* Bianjito.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Bianjito.xib; sourceTree = "<group>"; };
 		4BD972AA8A05FE73285D78F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0076701AEA05D00092CAB7 /* ParentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentsViewController.h; sourceTree = "<group>"; };
 		4E0076711AEA05D00092CAB7 /* ParentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentsViewController.m; sourceTree = "<group>"; };
@@ -304,7 +330,10 @@
 		4E0076731AEA06910092CAB7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1F5C19721C33D3B500226BBD /* jiaban_white.png */,
 				4E082A451B66269200A7C262 /* word@2x.png */,
+				1F6D8D011C3B707D00496AF1 /* ab_nav_bg.png */,
+				1F6D8CFF1C3B6FD200496AF1 /* no_image.9.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -417,6 +446,15 @@
 				1F4F63621C2A8BE400EB1CD1 /* BianJiViewController.h */,
 				1F4F63631C2A8BE400EB1CD1 /* BianJiViewController.m */,
 				1F4F63641C2A8BE400EB1CD1 /* BianJiViewController.xib */,
+				1FB11E301C32AD69009D1F5F /* Bianjito.h */,
+				1FB11E311C32AD69009D1F5F /* Bianjito.m */,
+				1FB11E321C32AD69009D1F5F /* Bianjito.xib */,
+				1F54CB001C3648C7009A642C /* Bianjiviewtableview.h */,
+				1F54CB011C3648C7009A642C /* Bianjiviewtableview.m */,
+				1F54CB021C3648C7009A642C /* Bianjiviewtableview.xib */,
+				1F6D8CFA1C3B57B700496AF1 /* MixiViewController.h */,
+				1F6D8CFB1C3B57B700496AF1 /* MixiViewController.m */,
+				1F6D8CFC1C3B57B700496AF1 /* MixiViewController.xib */,
 			);
 			name = danju;
 			sourceTree = "<group>";
@@ -435,7 +473,10 @@
 				4E35D6F61B21491400A77624 /* HistoryViewCell.xib */,
 				1F78343A1C2923D300DDD1B5 /* BianjiTableViewCell.h */,
 				1F78343B1C2923D300DDD1B5 /* BianjiTableViewCell.m */,
-				1F78343C1C2923D300DDD1B5 /* BianjiTableViewCell.xib */,
+				1F5C196E1C338D5F00226BBD /* BianjiTableViewCell.xib */,
+				1F54CB051C364C6C009A642C /* BijicellTableViewCell.h */,
+				1F54CB061C364C6C009A642C /* BijicellTableViewCell.m */,
+				1F54CB071C364C6C009A642C /* BijicellTableViewCell.xib */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -812,7 +853,7 @@
 				TargetAttributes = {
 					4EE56B361AD3C54700D34CDD = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = JEN4TAXF5A;
+						DevelopmentTeam = PHZ8GZM438;
 					};
 					4EE56B4F1AD3C54700D34CDD = {
 						CreatedOnToolsVersion = 6.2;
@@ -851,23 +892,30 @@
 				4E082A461B66269200A7C262 /* word@2x.png in Resources */,
 				4EE56B461AD3C54700D34CDD /* Main.storyboard in Resources */,
 				4ED4493A1AEA32160047614F /* pageDot@2x.png in Resources */,
+				1F6D8D001C3B6FD200496AF1 /* no_image.9.png in Resources */,
 				4EE56B4B1AD3C54700D34CDD /* LaunchScreen.xib in Resources */,
 				4EB23B921B5C9D2B001DD240 /* Icon-60@3x.png in Resources */,
 				4EB5C2881B4A5D220056D310 /* search_bg_blank@2x.png in Resources */,
 				6A4B6E9B1C07521400663B7E /* ChangePasswordViewController.xib in Resources */,
 				4EB23B981B5CA2FA001DD240 /* lauch-480@2x.png in Resources */,
+				1F6D8D021C3B707D00496AF1 /* ab_nav_bg.png in Resources */,
+				1F5C196F1C338D5F00226BBD /* BianjiTableViewCell.xib in Resources */,
 				4ED449391AEA32160047614F /* currentPageDot@2x.png in Resources */,
 				4EB23B941B5C9D2B001DD240 /* Icon@2x.png in Resources */,
 				4EEDA5731B140C9900BAD188 /* LogineViewController.xib in Resources */,
 				4EB23B931B5C9D2B001DD240 /* Icon.png in Resources */,
 				4EBF821B1B9D6F5C00FB065B /* DatePickerView.xib in Resources */,
-				1F78343E1C2923D300DDD1B5 /* BianjiTableViewCell.xib in Resources */,
 				6A33711B1C0073DA00A5B0D5 /* deleteBtn@2x.png in Resources */,
+				1FB11E341C32AD69009D1F5F /* Bianjito.xib in Resources */,
+				1F54CB041C3648C7009A642C /* Bianjiviewtableview.xib in Resources */,
+				1F5C19731C33D3B500226BBD /* jiaban_white.png in Resources */,
+				1F6D8CFE1C3B57B700496AF1 /* MixiViewController.xib in Resources */,
 				4EB23B911B5C9D2B001DD240 /* Icon-60@2x.png in Resources */,
 				4EB23B901B5C9D2B001DD240 /* Icon-60.png in Resources */,
 				4EC772C21B315D570060E709 /* KindsPickerView.xib in Resources */,
 				4EE56B481AD3C54700D34CDD /* Images.xcassets in Resources */,
 				1F4F63661C2A8BE400EB1CD1 /* BianJiViewController.xib in Resources */,
+				1F54CB091C364C6C009A642C /* BijicellTableViewCell.xib in Resources */,
 				6A4B6E961C074F0300663B7E /* AboutViewController.xib in Resources */,
 				4E35D6F81B21491400A77624 /* HistoryViewCell.xib in Resources */,
 			);
@@ -925,6 +973,7 @@
 				4E1DCC241B259F920023F337 /* CoreDataManager.m in Sources */,
 				6A94AF591BFCC82C00967DCC /* StatementViewController.m in Sources */,
 				4E35D6FB1B2151CA00A77624 /* HistoryModel.m in Sources */,
+				1FB11E331C32AD69009D1F5F /* Bianjito.m in Sources */,
 				4EE2D0501B43DBC70081C120 /* SDBrowserImageView.m in Sources */,
 				4E03BC981B33C7BB00E7CD0B /* NewsModel.m in Sources */,
 				4EAFA35F1B15AD38000B0C23 /* CostLayoutModel.m in Sources */,
@@ -947,10 +996,12 @@
 				4EE2D0471B43D6590081C120 /* ImageModel.m in Sources */,
 				4ED449421AEA3F780047614F /* NoticeListViewCell.m in Sources */,
 				4ECD96101B1FFB530078C713 /* KindsModel.m in Sources */,
+				1F54CB081C364C6C009A642C /* BijicellTableViewCell.m in Sources */,
 				4EAFA3591B1569CF000B0C23 /* BillsModel.m in Sources */,
 				4ED667061B144E2100CB5A19 /* LianxiModel.m in Sources */,
 				4EE2D0521B43DBC70081C120 /* SDWaitingView.m in Sources */,
 				4E03BC901B33BEE700E7CD0B /* NewsListViewController.m in Sources */,
+				1F6D8CFD1C3B57B700496AF1 /* MixiViewController.m in Sources */,
 				4E0076721AEA05D00092CAB7 /* ParentsViewController.m in Sources */,
 				4E26264E1B16B25A00993493 /* BillsDetailViewCell.m in Sources */,
 				4E2D56291AEB6C5000ABE1BA /* BillsListViewCell.m in Sources */,
@@ -978,6 +1029,7 @@
 				4EDF2FFF1AF89C220039DAA8 /* BillsDetailViewController.m in Sources */,
 				4E00767C1AEA07600092CAB7 /* HomeViewController.m in Sources */,
 				4ED98A5E1B2AB8690016CBD5 /* CGModel.m in Sources */,
+				1F54CB031C3648C7009A642C /* Bianjiviewtableview.m in Sources */,
 				4E3436DD1AEE0BED00E45C55 /* StayApprovalModel.m in Sources */,
 				4EE996121B26D4F700EA0F93 /* KindsItemModel.m in Sources */,
 				1F78343D1C2923D300DDD1B5 /* BianjiTableViewCell.m in Sources */,

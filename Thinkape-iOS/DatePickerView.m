@@ -29,14 +29,14 @@
 }
 */
 - (IBAction)doSelect:(id)sender {
-    
-    NSDate *currentDate = picker.date;
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
-    NSString *dateStr = [formatter stringFromDate:currentDate];
-    if (self.selectDateCallBack) {
-        self.selectDateCallBack(dateStr);
-    }
+//    
+//    NSDate *currentDate = picker.date;
+//    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//    [formatter setDateFormat:@"yyyy-MM-dd"];
+//    NSString *dateStr = [formatter stringFromDate:currentDate];
+//    if (self.selectDateCallBack) {
+//        self.selectDateCallBack(dateStr);
+//    }
     
 }
 
@@ -54,5 +54,16 @@
     
     [self removeFromSuperview];
     
+}
+
+- (IBAction)define:(id)sender {
+    
+    NSDate *currentDate = picker.date;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *dateStr = [formatter stringFromDate:currentDate];
+    if (self.selectDateCallBack) {
+        self.selectDateCallBack(dateStr);
+    }
 }
 @end

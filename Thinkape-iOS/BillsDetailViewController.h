@@ -19,5 +19,5 @@
 @property (nonatomic,assign) NSUInteger billType; // 0:普通单据 1:审批单据 default :0
 @property (nonatomic,strong) UnApprovalModel *unModel;
 @property (nonatomic,copy) void (^reloadData)();
-
+@property(nonatomic,assign)int selectedion2;
 @end

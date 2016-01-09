@@ -66,6 +66,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.selectedIndex = 0;
+    self.selectedion2=0;
     self.title = @"详情";
     UIButton *firstBtn = (UIButton *)[self.topView viewWithTag:10];
     firstBtn.selected = YES;
@@ -169,6 +170,11 @@
                           
                           [_costData addObjectsFromArray:[dataArr objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, _costLayoutArray.count)]]];
                           _uploadArr = [NSMutableArray arrayWithArray:[[responseObject objectForKey:@"msg"] objectForKey:@"upload"]];
+//                          if (_uploadArr==nil) {
+//                              UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ab_nav_bg.png"]];
+//                              [_uploadArr addObject:image];
+//                              
+//                          }
                           [self.tableView reloadData];
                           [SVProgressHUD dismiss];
                         
@@ -504,13 +510,7 @@
     }
     return number;
 }
--(void)update
-{
-    UIActionSheet *aller = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"转借款",@"转借款",nil];
-    aller.tag = 300;
-    [self.view addSubview:aller];
-    
-}
+
 //- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex NS_DEPRECATED_IOS(2_0, 8_3) __TVOS_PROHIBITED
 //{
 //    
@@ -741,6 +741,33 @@
         self.tableViewBottomConstraint.constant = 135.0f;
         lastConstant = 135.0f;
     }
+//    else
+//    {
+//       
+//            UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"dad" style:UIBarButtonItemStylePlain target:self action:@selector(fadsa)];
+//            self.navigationItem.rightBarButtonItem=item;
+//            
+//    }
+//    self.billType == 0 && ([[mainDataDic objectForKey:@"flowstatus_show"] isEqualToString:@"未提交"] ||[[mainDataDic objectForKey:@"flowstatus_show"] isEqualToString:@"已弃审"] ||
+    if (self.billType==0&&[[mainDataDic objectForKey:@"flowstatus_show"]isEqualToString:@"已审核"]) {
+        UIButton *button =[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+        [button setBackgroundImage:[UIImage imageNamed:@"right_item"] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(danju) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *bar = [[UIBarButtonItem alloc] initWithCustomView:button];
+        self.navigationItem.rightBarButtonItem=bar;
+        
+        
+        
+    }
+    
+}
+-(void)danju
+{
+   self.actionsheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"生成借款",@"生成报销", nil];
+    self.actionsheet.tag=3;
+    
+    [self.actionsheet showInView:self.view];
+    
 }
 -(void)buttontap
 {
@@ -943,25 +970,37 @@
     if (!_imageArray) {
         _imageArray = [[NSMutableArray alloc] initWithCapacity:0];
     }
-    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照",@"本地相册", nil];
-    [sheet showInView:self.view];
+    self.actionsheet= [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照",@"本地相册", nil];
+   self.actionsheet.tag=2;
+    [self.actionsheet showInView:self.view];
     
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    
-    if (buttonIndex == 0) {
-        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-        picker.delegate = self;
-        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-        [self presentViewController:picker animated:YES completion:nil];
+    if (self.actionsheet.tag==2) {
+        if (buttonIndex == 0) {
+            UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+            picker.delegate = self;
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            [self presentViewController:picker animated:YES completion:nil];
+        }
+        if (buttonIndex == 1)
+        {
+            CTAssetsPickerController *picker = [[CTAssetsPickerController alloc] init];
+            picker.delegate = self;
+            [self presentViewController:picker animated:YES completion:nil];
+            
+        }
     }
-    if (buttonIndex == 1)
-    {
-        CTAssetsPickerController *picker = [[CTAssetsPickerController alloc] init];
-        picker.delegate = self;
-        [self presentViewController:picker animated:YES completion:nil];
-        
+    if (self.actionsheet.tag==3) {
+        if (buttonIndex==0) {
+            NSLog(@"<<<<<<<<<<<<<<<<<<<<<<");
+            
+        }
+        if (buttonIndex==1) {
+            NSLog(@"111111111111111");
+            
+        }
     }
    
 }
@@ -1138,10 +1177,12 @@
         [btn setFrame:CGRectMake(i*(60 + 35), 10, 57, 57)];
         [btn addTarget:self action:@selector(costDetail:) forControlEvents:UIControlEventTouchUpInside];
         btn.contentMode = UIViewContentModeScaleAspectFit;
-        [btn sd_setBackgroundImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",model.photopath]]
-                                 forState:UIControlStateNormal
-                                completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-         }];
+//        [btn sd_setBackgroundImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",model.photopath]]
+//                                 forState:UIControlStateNormal
+//                                completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//         }];
+        [btn sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",model.photopath]]  forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"ab_nav_bg.png"]];
+        
         btn.tag = i;
     
         UILabel *totleMoney = [[UILabel alloc] initWithFrame:CGRectMake(0, 37, 57, 15)];
@@ -1161,6 +1202,7 @@
     CostDetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"CostDetailVC"];
     vc.costLayoutArray = _costLayoutArray;
     vc.costDataArr = _costData;
+    vc.selecter=_selectedion2;
     vc.index = btn.tag;
     [self.navigationController pushViewController:vc animated:YES];
     

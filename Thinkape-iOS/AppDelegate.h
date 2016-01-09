@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property(nonatomic,strong)NSMutableDictionary *dict;
+@property(nonatomic,strong)NSMutableArray *uptateimage;
+@property(nonatomic,strong)NSMutableArray *imagedate;
 
 @end
 
