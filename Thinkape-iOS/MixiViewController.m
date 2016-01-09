@@ -120,7 +120,10 @@
 //    self.dict2=app.dict;
     AppDelegate *aler =[UIApplication sharedApplication].delegate;
     self.dict2=aler.dict;
-//    self.dexcel=[self.dict2 newValueFromOldValue: property:layout.]
+//    NSIndexPath *indexs =[self.tableview cellForRowAtIndexPath:_index];
+//    UITableViewCell *cell =[self.tableview cellForRowAtIndexPath:indexs.row];
+    
+//    [self.dict2 newValueFromOldValue: property:<#(MJProperty *)#>]
     
     [self.navigationController popViewControllerAnimated:YES];
     
