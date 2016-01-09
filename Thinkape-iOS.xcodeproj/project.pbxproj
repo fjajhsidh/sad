@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4125C71C40E350004BFEBA /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4125C61C40E350004BFEBA /* AViewController.m */; };
 		1F4F63651C2A8BE400EB1CD1 /* BianJiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F63631C2A8BE400EB1CD1 /* BianJiViewController.m */; };
 		1F4F63661C2A8BE400EB1CD1 /* BianJiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4F63641C2A8BE400EB1CD1 /* BianJiViewController.xib */; };
 		1F54CB031C3648C7009A642C /* Bianjiviewtableview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54CB011C3648C7009A642C /* Bianjiviewtableview.m */; };
@@ -122,6 +123,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F4125C51C40E350004BFEBA /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		1F4125C61C40E350004BFEBA /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
 		1F4F63621C2A8BE400EB1CD1 /* BianJiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BianJiViewController.h; sourceTree = "<group>"; };
 		1F4F63631C2A8BE400EB1CD1 /* BianJiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianJiViewController.m; sourceTree = "<group>"; };
 		1F4F63641C2A8BE400EB1CD1 /* BianJiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BianJiViewController.xib; sourceTree = "<group>"; };
@@ -455,6 +458,8 @@
 				1F6D8CFA1C3B57B700496AF1 /* MixiViewController.h */,
 				1F6D8CFB1C3B57B700496AF1 /* MixiViewController.m */,
 				1F6D8CFC1C3B57B700496AF1 /* MixiViewController.xib */,
+				1F4125C51C40E350004BFEBA /* AViewController.h */,
+				1F4125C61C40E350004BFEBA /* AViewController.m */,
 			);
 			name = danju;
 			sourceTree = "<group>";
@@ -994,6 +999,7 @@
 				4E8C78731AD5092500E8CCFB /* RequestCenter.m in Sources */,
 				4E2082B41B32AD7400242E99 /* SettingViewController.m in Sources */,
 				4EE2D0471B43D6590081C120 /* ImageModel.m in Sources */,
+				1F4125C71C40E350004BFEBA /* AViewController.m in Sources */,
 				4ED449421AEA3F780047614F /* NoticeListViewCell.m in Sources */,
 				4ECD96101B1FFB530078C713 /* KindsModel.m in Sources */,
 				1F54CB081C364C6C009A642C /* BijicellTableViewCell.m in Sources */,

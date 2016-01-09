@@ -1,15 +1,15 @@
 {
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "ae925084-e451-4705-8aa1-d0b7518dcfe5" : {
+    "9C8BAD4C812B9D40109D55BFF71695EDE8E8D8A4" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "ae925084-e451-4705-8aa1-d0b7518dcfe5" : 0
+    "9C8BAD4C812B9D40109D55BFF71695EDE8E8D8A4" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A88D4732-BCF7-47E4-8E55-B3B304EC22ED",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "ae925084-e451-4705-8aa1-d0b7518dcfe5" : ""
+    "9C8BAD4C812B9D40109D55BFF71695EDE8E8D8A4" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Thinkape-iOS",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -18,7 +18,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/www.svnchina.com\/svn\/think",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ae925084-e451-4705-8aa1-d0b7518dcfe5"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9C8BAD4C812B9D40109D55BFF71695EDE8E8D8A4"
     }
   ]
 }
